@@ -1,5 +1,5 @@
-swaggydoc
----------
+rest-api-docs
+-------------
 API docs for Grails 3.1.x Restful API
 
 Challenge with REST API documentation is, it quickly get out of sync with current implementation as developers implement new futures.
