@@ -16,8 +16,8 @@ This project demonstrate how developers can generate API docs and keep in sync w
     # create a new API project
     grails create-app rest-api-docs  
     # grails create-app rest-api-docs --profile rest-api
-    # create a domain and a controller
     cd rest-api-docs
+    # create a domain and a controller
     grails create-domain-class User
     grails create-restful-controller User
     # add URL mapping for this API in UrlMappings.groovy
@@ -79,6 +79,6 @@ This project demonstrate how developers can generate API docs and keep in sync w
 
 4. Run app
 
-```bash
-gradle bootRun
-```
+    ```bash
+    gradle bootRun
+    ```
