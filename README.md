@@ -30,50 +30,50 @@ grails create-restful-controller User
 3. Optionally annotate your REST controllers
 
     1. Simple 
-    ```groovy
-    @Api(value = 'user', description = 'User Management  API')
-    class UserController extends RestfulController {
-        static responseFormats = ['json', 'xml']
-        UserController() {
-            super(User)
-        }
+```groovy
+@Api(value = 'user', description = 'User Management  API')
+class UserController extends RestfulController {
+    static responseFormats = ['json', 'xml']
+    UserController() {
+        super(User)
     }
-    ```
+}
+```
     2. Custom
-    ```groovy
-    @Api(value = 'user', description = 'User Management  API')
-    class UserController extends RestfulController {
-        static responseFormats = ['json', 'xml']
-        UserController() {
-            super(User)
-        }
-        @SwaggyList
-        def index(Integer max) {
-            super.index(max)
-        }
-        @SwaggyShow
-        def show() {
-            super.show()
-        }
-        @Transactional
-        @SwaggySave
-        def save() {
-            super.save()
-        }
-        @Transactional
-        @SwaggyUpdate
-        def update() {
-            super.update()
-        }
-        @Transactional
-        @SwaggyDelete
-        def delete() {
-            super.delete()
-        }   
+```groovy
+@Api(value = 'user', description = 'User Management  API')
+class UserController extends RestfulController {
+    static responseFormats = ['json', 'xml']
+    UserController() {
+        super(User)
     }
-    ``` 
+    @SwaggyList
+    def index(Integer max) {
+        super.index(max)
+    }
+    @SwaggyShow
+    def show() {
+        super.show()
+    }
+    @Transactional
+    @SwaggySave
+    def save() {
+        super.save()
+    }
+    @Transactional
+    @SwaggyUpdate
+    def update() {
+        super.update()
+    }
+    @Transactional
+    @SwaggyDelete
+    def delete() {
+        super.delete()
+    }   
+}
+``` 
 
-4. Run app
+    4. Run app
 
 ```bash
 gradle bootRun
