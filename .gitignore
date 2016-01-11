@@ -36,8 +36,13 @@ Icon
 # IntelliJ
 /out/
 /build/
+/classes/
 
 ### Grails template
+# web application files
+/web-app/WEB-INF/classes
+.asscache
+
 # default HSQL database files for production mode
 /prodDb.*
 

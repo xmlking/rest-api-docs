@@ -82,3 +82,4 @@ This project demonstrate how developers can generate API docs and keep in sync w
     ```bash
     gradle bootRun
     ```
+    open  http://localhost:8088/api
