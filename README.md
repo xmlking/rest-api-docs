@@ -2,9 +2,9 @@ rest-api-docs
 -------------
 API docs for Grails 3.1.x Restful API
 
-Challenge with REST API documentation is, it quickly get out of sync with current implementation as developers implement new futures.
+Challenge with REST API documentation is, it quickly get out of sync with current implementation as developers changes code.
 
-This project demonstrate how developers can generate API docs and keep in sync with code changes. 
+This project demonstrate how developers can generate API docs and keep in sync with code changes using rahulsom's [swaggydoc](https://github.com/rahulsom/swaggydoc) plugin.
 
 ![API Docs](./api-doc.png)
 
@@ -16,6 +16,7 @@ This project demonstrate how developers can generate API docs and keep in sync w
     # create a new API project
     grails create-app rest-api-docs  
     # grails create-app rest-api-docs --profile rest-api
+    # when using with `rest-api` profile, add `org.grails:grails-dependencies` to build.gradle
     cd rest-api-docs
     # create a domain and a controller
     grails create-domain-class User
